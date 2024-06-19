@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "obsidian-query"
+version = "0.1.0"
+description = ""
+authors = ["javi22020 <90896750+javi22020@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+obsidian_query = "obsidian_query.obsidian_query:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
