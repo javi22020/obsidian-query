@@ -17,7 +17,9 @@ class ObsidianEngine:
                 ChatMessage(role=MessageRole.SYSTEM, content="You are a chat assistant with access to knowledge. You must be helpful and precise.")
             ]
         )
-    def run(self):
-        self.ce.stream_chat(
-            
+
+    def run(self, query: str):
+        sacr = self.ce.stream_chat(
+            message=query
         )
+        return sacr
